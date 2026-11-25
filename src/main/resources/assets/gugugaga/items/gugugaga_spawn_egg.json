@@ -1,10 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "gugugaga:item/gugugaga_spawn_egg",
-    "tints": [
-      { "type": "minecraft:constant", "value": 2960685 },
-      { "type": "minecraft:constant", "value": 16777215 }
-    ]
+    "model": "gugugaga:item/gugugaga_spawn_egg"
   }
 }

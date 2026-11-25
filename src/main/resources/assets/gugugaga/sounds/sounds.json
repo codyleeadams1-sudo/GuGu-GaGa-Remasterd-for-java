@@ -1,0 +1,50 @@
+{
+  "entity.gugugaga.ambient": {
+    "sounds": [
+      {
+        "name": "gugugaga:idle1",
+        "stream": false
+      },
+      {
+        "name": "gugugaga:idle2"
+      },
+      {
+        "name": "gugugaga:idle3"
+      },
+      {
+        "name": "gugugaga:idle4"
+      },
+      {
+        "name": "gugugaga:idle5"
+      },
+      {
+        "name": "gugugaga:idle6"
+      },
+      {
+        "name": "gugugaga:idle7"
+      }
+    ]
+  },
+  "entity.gugugaga.hurt": {
+    "sounds": [
+      "gugugaga:hurt1",
+      "gugugaga:hurt2",
+      "gugugaga:hurt3",
+      "gugugaga:hurt4"
+    ]
+  },
+  "entity.gugugaga.death": {
+    "sounds": [
+      "gugugaga:death1",
+      "gugugaga:death2"
+    ]
+  },
+  "entity.gugugaga.feed": {
+    "sounds": [
+      {
+        "name": "gugugaga:cry",
+        "volume": 0.9
+      }
+    ]
+  }
+}

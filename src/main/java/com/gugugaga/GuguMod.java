@@ -40,6 +40,8 @@ public class GuguMod implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        // Force registration of the addon-derived sound events.
+        GuguSounds.AMBIENT.toString();
         FabricDefaultAttributeRegistry.register(GUGU, GuguEntity.createAttributes());
         ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.SPAWN_EGGS)
                 .register(output -> output.accept(GUGU_SPAWN_EGG));
