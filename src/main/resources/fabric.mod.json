@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "gugugaga",
+  "version": "${version}",
+  "name": "Gugugaga Remastered",
+  "description": "Gugu Gaga for Minecraft Java. Port of the model, texture and animation assets from the DLT_Craft Bedrock add-on.",
+  "authors": [
+    "DLT_Craft (original Bedrock add-on creator)"
+  ],
+  "license": "All-Rights-Reserved",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.gugugaga.GuguMod"
+    ],
+    "client": [
+      "com.gugugaga.client.GuguClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.17.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
