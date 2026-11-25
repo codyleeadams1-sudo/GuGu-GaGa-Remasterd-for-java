@@ -4,6 +4,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.AgeableMob;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.TamableAnimal;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -35,6 +36,11 @@ public class GuguEntity extends TamableAnimal {
     public boolean isFood(ItemStack stack) {
         return stack.is(Items.COD) || stack.is(Items.SALMON) ||
                stack.is(Items.TROPICAL_FISH) || stack.is(Items.PUFFERFISH);
+    }
+
+    @Override
+    public AgeableMob getBreedOffspring(ServerLevel level, AgeableMob otherParent) {
+        return new GuguEntity(GuguMod.GUGU, level);
     }
 
     @Override
