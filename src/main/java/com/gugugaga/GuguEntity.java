@@ -31,7 +31,8 @@ public class GuguEntity extends TamableAnimal {
                 .add(Attributes.MOVEMENT_SPEED, 0.25);
     }
 
-    private boolean isFoodFish(ItemStack stack) {
+    @Override
+    public boolean isFood(ItemStack stack) {
         return stack.is(Items.COD) || stack.is(Items.SALMON) ||
                stack.is(Items.TROPICAL_FISH) || stack.is(Items.PUFFERFISH);
     }
@@ -39,7 +40,7 @@ public class GuguEntity extends TamableAnimal {
     @Override
     public InteractionResult mobInteract(Player player, InteractionHand hand) {
         ItemStack held = player.getItemInHand(hand);
-        if (isFoodFish(held)) {
+        if (this.isFood(held)) {
             if (!this.level().isClientSide()) {
                 if (!this.isTame()) {
                     if (this.random.nextInt(3) == 0) {
